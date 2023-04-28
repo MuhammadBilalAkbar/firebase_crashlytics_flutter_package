@@ -30,8 +30,8 @@ samples, guidance on mobile development, and a full API reference.
 - 3.1K: https://youtu.be/VmAoOYfIDYQ
 - 15K: https://youtu.be/DFcr0k2nrP4
 - 1K: https://youtu.be/1eMJqwlB-bI
-- 54: https://youtu.be/2jPB6Q-Mjac
-- 75: https://youtu.be/BqBM2SCO_4M
+- 73: https://youtu.be/2jPB6Q-Mjac
+- 78: https://youtu.be/BqBM2SCO_4M
 - 1.7K: https://youtu.be/tLXq1EowZVk
 - https://pub.dev/packages/firebase_crashlytics
 - https://firebase.flutter.dev/docs/crashlytics/overview/
@@ -45,41 +45,291 @@ samples, guidance on mobile development, and a full API reference.
 
 **Android/Swift/React Videos**
 
-- _[Add here the high ranking video links that have many views, or are ranked high on YouTube ...]_
-- _[e.g. 380K: https://www.youtube.com/watch?v=Nl54MJDR2p8]_
+- 8.7K: https://youtu.be/s2ZY9ketQXQ
+- 3.9K: https://youtu.be/i66ZTIMcqrc
+- 6.6K: https://youtu.be/JxVYfZprK0g
+- 1.4K: https://youtu.be/Ire9yQg4OFA
+- 9.5K: https://youtu.be/sH4rPPy9ROA
+- 2.5K: https://youtu.be/GWS76WtI5y8
+- 15K: https://youtu.be/G2RVTkKgas0
+- 24K: https://youtu.be/qFQLG1Hlzis
+- 2.7K: https://youtu.be/PHkfjxCTS5w
+- 1.2K: https://youtu.be/infKu-sxCFQ
+- 7.6K: https://youtu.be/BpVfJ7mVlUU
+- 22K: https://youtu.be/dc71XX-zJtE
+- 4.5K: https://youtu.be/VCa_ZFXm_9A
+- 8.7K: https://youtu.be/s2ZY9ketQXQ
+- 6.1K: https://youtu.be/YOSzluAmNuE
+- 32K: https://youtu.be/2jMcmEsWlm0
+- https://developer.android.com/studio/debug/app-quality-insights
+- https://firebase.google.com/docs/crashlytics/get-started
+- https://medium.com/codechai/integrate-firebase-crashlytics-in-android-d4712441a5bd
+- https://firebasetutorials.com/firebase-crashlytics/
+- https://medium.com/@paulsoham/firebase-crashlytics-in-ios-swift-1d8c9aec63d0
+- https://medium.com/swlh/integrating-firebase-and-crashlytics-in-ios-complete-guide-updated-2019-4526e9ab9c6d
+- https://iostutorialjunction.com/2022/02/integrate-google-firebase-crashlytics-in-ios-app-using-swift.html
+- https://rnfirebase.io/crashlytics/usage
+- https://www.npmjs.com/package/@react-native-firebase/crashlytics
+- https://www.folio3.com/mobile/blog/firebase-crashlytics-integration-in-react-native/
+- https://blog.logrocket.com/guide-crashlytics-react-native/
 
 **Great Features**
 
-- _[Add here the great features & things that are showcased well from the videos above, if it is about UI you could also attach screenshots]_
-- _..._
+- This package is used for Firebase Crashlytics. It reports uncaught errors to the Firebase console.
 
 **Problems from Videos**
 
-- _[Add here problems that users faced in the video comments, or also solved problems from the video itself]_
-- _..._
+- Question: How long did it take for you to see the crash in the Firebase Console? ... I forced the
+  crash, but I've got nothing.
+
+Answer: 5-15 mins. If still now showing, check your steps again.
 
 **Problems from Flutter Stackoverflow**
 
-- _[Add here any links to problems people face with this topic ...]_
-- _[Add stackoverflow links "Flutter [Your Topic] not working" etc. ...]_
+- https://stackoverflow.com/questions/74267630/catch-error-isnt-called-after-firebasecrashlytics-instance-crash-with-flutt
+- https://stackoverflow.com/questions/69706527/firebase-crashlytics-still-pending-flutter
+- https://stackoverflow.com/questions/72360215/how-to-make-the-error-title-and-stacktrace-in-firebase-crashlytics-readable
+- https://stackoverflow.com/questions/73298113/firebase-crashlytics-is-not-reporting-anything-on-flutter
+- https://stackoverflow.com/questions/69053807/firebase-crashlytics-not-working-in-flutter-android
+- https://stackoverflow.com/questions/74511640/firebase-crashlytics-reporting-mystery-crashes
+- https://stackoverflow.com/questions/63949075/getting-error-while-using-firebase-crashlytics-with-flutter
+- https://stackoverflow.com/questions/72764885/how-to-add-firebase-crashlytics-to-flutter-project
 
 ## 3. Video Structure
 
 **Main Points / Purpose Of Lesson**
 
-1. _[Why is it useful for the viewer to learn more about what we teach in this video lesson?]_
-2. _[What are the main points of this video lesson]_
-    - _[Add here multiple main points ...]_
-    - _[...]_
-3. _[Out of 1. & 2. create 2-3 sentences that could be later used for recording the introduction of this video lesson]_
+1. In this video, you will learn how to use firebase_crashlytics package to send reports and
+   uncaught errors to the firebase console.
+2. Main points:
+    - Set custom key
+    - Show log in firebase
+    - Crashlytics crash
+    - Throw app error
+    - Record fatal error
+    - Record non-fatal error
+3. This package is very helpful and easily track the errors and exceptions in flutter app.
 
 **The Structured Main Content**
 
-1. _[Add here the main topics the video project is covering in chronological order. For each topic add the main points how this lesson can be taught step by step to beginners who never did anything related to what this lesson is about]_
-2. _[e.g. for this video project: https://www.youtube.com/watch?v=MSv38jO4EJk]_
-    - _[1. Setup Android & iOS]_
-        - _[Add for each topic more detailed steps ...]_
-        - _[...]_
-    - _[2. Pick Image From Gallery]_
-    - _[3. Pick Image From Camera]_
-    - _[4. Persist Images To Local Storage]_
+1. Run `dart pub add firebase_crashlytics` in terminal to add this package in your project's
+   pubspec.yaml file.
+2. Also add `firebase_core` package because it handles integration of flutter app with firebase.
+3. We test this package for android only. UI output of this code is following:
+   ![](Crashlytics_Output.gif)<br/>
+4. Follow [this](https://www.youtube.com/watch?v=sz4slPFwEvs) to integrate your flutter android app
+   with firebase.
+5. After integration, follow
+   the [Add SDK](https://firebase.google.com/docs/crashlytics/get-started?platform=android#add-sdk)
+   method to enable Crashlytics of your app.
+   ![](screenshots/Crashlytics_Enable_AddSDK.png)
+    - In android/app/build.gradle => Set minSdkVersion to 19,
+
+      Add `apply plugin: 'com.google.firebase.crashlytics'`.
+    - In android/build.gradle =>
+      Add `classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.5'`
+6. After adding sdk, you will be to enable Crashlytics in firebase.
+7. In `main.dart` file, initialize firebase core and firebase crashlytics.
+
+```dart
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  FlutterError.onError = (errorDetails) {
+    FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
+  };
+
+  PlatformDispatcher.instance.onError = (error, stack) {
+    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    return true;
+  };
+
+  runApp(const MyApp());
+}
+```
+
+- To send error which flutter can catch, use `FlutterError.onError`.
+
+If you wish to record a "non-fatal" exception, please
+use `FirebaseCrashlytics.instance.recordFlutterError` instead.
+
+- Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
+  in `PlatformDispatcher.instance.onError`.
+
+If you wish to record a "non-fatal" exception, please remove the "fatal" parameter.
+
+- `home` property of `MaterialApp` is calling `HomePage` widget from `home_page.dart` file.
+
+8. `custom_widgets.dart` contains code to hide and show the snackBar when user press on button. It
+   is used in `home_page.dart`.
+
+```dart
+import 'package:flutter/material.dart';
+
+class CustomWidgets {
+  static buildSnackBar(BuildContext context, String message) {
+    ScaffoldMessenger.of(context)
+      ..removeCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text(message),
+          duration: const Duration(seconds: 5),
+        ),
+      );
+  }
+}
+```
+
+9. `home_page.dart` contains `ElevatedButton`s in column according to main points.
+
+Screenshot of HomePage of Crashlytics page on firebase console is following:
+
+![](screenshots/Crashlytics_HomePage.PNG)
+
+- Set Custom Key
+
+```dart 
+
+              ElevatedButton(
+                onPressed: () {
+                  FirebaseCrashlytics.instance
+                      .setCustomKey('example', 'flutterfire');
+                  CustomWidgets.buildSnackBar(
+                    context,
+                    'Custom Key "example: flutterfire" has been set. \n'
+                    'Key will appear in Firebase Console once an error has been reported.',
+                  );
+                },
+                child: const Text('Set Custom Key'),
+              ),
+```
+
+Output in firebase console:
+
+![](screenshots/Crashlytics_SetKey.png)
+
+- Show Log in Firebase
+
+```dart 
+              ElevatedButton(
+                onPressed: () {
+                  FirebaseCrashlytics.instance.log('This is a log example');
+                  CustomWidgets.buildSnackBar(
+                    context,
+                    'The message "This is a log example" has been logged. \n'
+                    'Message will appear in Firebase Console once an error has been reported.',
+                  );
+                },
+                child: const Text('Show Log in Firebase'),
+              ),
+```
+
+Output in firebase console:
+
+![](screenshots/Crashlytics_ShowLog.png)
+
+- Crashlytics Crash => After showing snackBar, `sleep` from `dart:io` is called delay in crash for 5
+  seconds.
+
+Then crash is called to throw an error. Used for confirmation that errors are being correctly
+reported. App will crash. When you will reopen app, it will send crash report to firebase console.
+
+```dart 
+              ElevatedButton(
+                onPressed: () {
+                  CustomWidgets.buildSnackBar(
+                    context,
+                    'App will crash is 5 seconds \n'
+                    'Please reopen to send data to Crashlytics',
+                  );
+                  sleep(
+                    const Duration(seconds: 5),
+                  );
+                  FirebaseCrashlytics.instance.crash();
+                },
+                child: const Text("Crashlytics Crash"),
+              ),
+```
+
+Output in firebase console:
+
+![](screenshots/Crashlytics_Crash.png)
+
+- Throw Error => Example of thrown error, it will be caught and sent to Crashlytics.
+
+```dart 
+              ElevatedButton(
+                onPressed: () {
+                  CustomWidgets.buildSnackBar(
+                    context,
+                    'Thrown error has been caught and sent to Crashlytics.',
+                  );
+                  throw StateError('Uncaught error thrown by app');
+                },
+                child: const Text("Throw Error"),
+              ),
+```
+
+Output in firebase console:
+
+![](screenshots/Crashlytics_ThrowError.png)
+
+- Record Fatal Error => "reason" will append the word "thrown" in the Crashlytics console.
+
+`fatal` property is set to `true`.
+
+```dart 
+              ElevatedButton(
+                onPressed: () async {
+                  try {
+                    CustomWidgets.buildSnackBar(
+                      context,
+                      'Recorded Fatal Error',
+                    );
+                    throw Error();
+                  } catch (e, s) {
+                    await FirebaseCrashlytics.instance.recordError(
+                      e,
+                      s,
+                      reason: 'as an example of fatal error',
+                      fatal: true,
+                    );
+                  }
+                },
+                child: const Text('Record Fatal Error'),
+              ),
+```
+
+Output in firebase console:
+
+![](screenshots/Crashlytics_FatalError.png)
+
+- Record Fatal Error => "reason" will append the word "thrown" in the Crashlytics console.
+
+only `fatal` is set to `false`. It is by default `false`.
+
+```dart 
+              ElevatedButton(
+                onPressed: () async {
+                  try {
+                    CustomWidgets.buildSnackBar(
+                      context,
+                      'Recorded Non-Fatal Error',
+                    );
+                    throw Error();
+                  } catch (e, s) {
+                    await FirebaseCrashlytics.instance.recordError(
+                      e,
+                      s,
+                      reason: 'as an example of non-fatal error',
+                    );
+                  }
+                },
+                child: const Text('Record Non-Fatal Error'),
+              ),
+```
+
+Output in firebase console:
+
+![](screenshots/Crashlytics_NonFatalError.png)

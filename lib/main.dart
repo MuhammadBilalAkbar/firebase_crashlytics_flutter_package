@@ -11,13 +11,10 @@ void main() async {
   await Firebase.initializeApp();
 
   FlutterError.onError = (errorDetails) {
-    // If you wish to record a "non-fatal" exception, please use `FirebaseCrashlytics.instance.recordFlutterError` instead
     FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
   };
 
-  // Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
   PlatformDispatcher.instance.onError = (error, stack) {
-    // If you wish to record a "non-fatal" exception, please remove the "fatal" parameter
     FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
     return true;
   };
@@ -29,13 +26,26 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) =>
-      MaterialApp(
-        title: 'Flutter Crashlytics Package',
+  Widget build(BuildContext context) => MaterialApp(
+        title: 'Firebase Crashlytics Package',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.amber,
+          appBarTheme: const AppBarTheme(
+            titleTextStyle: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+              minimumSize: const Size(300, 50),
+              textStyle:
+                  const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              foregroundColor: Colors.white,
+            ),
+          ),
         ),
-        home: const HomePage(title: 'Flutter Crashlytics Package'),
+        home: const HomePage(title: 'Firebase Crashlytics Package'),
       );
 }
