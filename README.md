@@ -18,8 +18,19 @@ samples, guidance on mobile development, and a full API reference.
 ## 1. Research: Firebase Crashlytics Flutter Package
 
 - Keywords:
-    - _[Add here a list of important keywords about the topic]_
-- Video Title: _[title for the video that contains high ranking keywords]_
+    - firebase crashlytics flutter
+    - firebase_crashlytics flutter package
+    - firebase crashlytics flutter ios not working
+    - firebase crashlytics flutter example
+    - firebase_crashlytics pub dev
+    - firebase crashlytics flutter ios
+    - firebase crashlytics android
+    - firebase crashlytics not reporting crashes android
+    - firebase crashlytics github
+    - firebase crashlytics collection enabled
+    - firebase crashlytics platform interface
+- Video Title: Firebase Crashlytics Flutter Package - Firebase Crashlytics Flutter for Android with
+  Example and Github Code
 
 ## 2. Research: Competitors
 
