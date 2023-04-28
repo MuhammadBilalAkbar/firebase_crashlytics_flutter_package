@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                     );
                     FirebaseCrashlytics.instance.crash();
                   },
-                  child: const Text("Crashlytics Crash"),
+                  child: const Text('Crashlytics Crash'),
                 ),
                 const SizedBox(height: 20),
                 ElevatedButton(
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                     );
                     throw StateError('Uncaught error thrown by app');
                   },
-                  child: const Text("Throw Error"),
+                  child: const Text('Throw Error'),
                 ),
                 const SizedBox(height: 20),
                 ElevatedButton(
@@ -87,8 +87,6 @@ class _HomePageState extends State<HomePage> {
                       );
                       throw Error();
                     } catch (e, s) {
-                      // "reason" will append the word "thrown" in the
-                      // Crashlytics console.
                       await FirebaseCrashlytics.instance.recordError(
                         e,
                         s,
