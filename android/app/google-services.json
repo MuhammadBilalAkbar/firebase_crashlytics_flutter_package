@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "88008941309",
+    "project_id": "firebas-crashlytics-project",
+    "storage_bucket": "firebas-crashlytics-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88008941309:android:413ab6fa3e7a1a2a8ce894",
+        "android_client_info": {
+          "package_name": "com.example.firebase_crashlytics_flutter_package"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88008941309-4p8nk96e0onrfsgtmghpqjn6ejdvc41p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbvobcuJ02Hp1ei-uoVCVbNFrpeK2rpso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88008941309-4p8nk96e0onrfsgtmghpqjn6ejdvc41p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
