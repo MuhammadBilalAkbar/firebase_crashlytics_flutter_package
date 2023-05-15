@@ -86,10 +86,10 @@ class _HomePageState extends State<HomePage> {
                         'Recorded Fatal Error',
                       );
                       throw Error();
-                    } catch (e, s) {
+                    } catch (error, stackTrace) {
                       await FirebaseCrashlytics.instance.recordError(
-                        e,
-                        s,
+                        error,
+                        stackTrace,
                         reason: 'as an example of fatal error',
                         fatal: true,
                       );
@@ -106,10 +106,10 @@ class _HomePageState extends State<HomePage> {
                         'Recorded Non-Fatal Error',
                       );
                       throw Error();
-                    } catch (e, s) {
+                    } catch (error, stackTrace) {
                       await FirebaseCrashlytics.instance.recordError(
-                        e,
-                        s,
+                        error,
+                        stackTrace,
                         reason: 'as an example of non-fatal error',
                       );
                     }
