@@ -162,13 +162,13 @@ void main() async {
 
 - To send error which flutter can catch, use `FlutterError.onError`.
 
-If you wish to record a "non-fatal" exception, please
-use `FirebaseCrashlytics.instance.recordFlutterError` instead.
+  If you wish to record a "non-fatal" exception, please
+  use `FirebaseCrashlytics.instance.recordFlutterError` instead.
 
 - Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
   in `PlatformDispatcher.instance.onError`.
 
-If you wish to record a "non-fatal" exception, please remove the "fatal" parameter.
+  If you wish to record a "non-fatal" exception, please remove the "fatal" parameter.
 
 - `home` property of `MaterialApp` is calling `HomePage` widget from `home_page.dart` file.
 

@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {
                     CustomWidgets.buildSnackBar(
                       context,
-                      'App will crash is 5 seconds \n'
+                      'App will crash in 5 seconds \n'
                       'Please reopen to send data to Crashlytics',
                     );
                     sleep(
