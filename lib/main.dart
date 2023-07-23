@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
-              minimumSize: const Size(300, 50),
+              minimumSize: const Size(350, 50),
               textStyle:
                   const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               foregroundColor: Colors.white,

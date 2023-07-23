@@ -139,7 +139,7 @@ Answer: 5-15 mins. If still now showing, check your steps again.
       Add `apply plugin: 'com.google.firebase.crashlytics'`.
     - In android/build.gradle =>
       Add `classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.5'`
-6. After adding sdk, you will be to enable Crashlytics in firebase.
+6. After adding sdk, you will be able to enable Crashlytics in firebase.
 7. In `main.dart` file, initialize firebase core and firebase crashlytics.
 
 ```dart
