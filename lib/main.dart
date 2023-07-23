@@ -19,6 +19,8 @@ void main() async {
     return true;
   };
 
+  await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+
   runApp(const MyApp());
 }
 

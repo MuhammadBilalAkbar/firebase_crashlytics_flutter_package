@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:88008941309:android:413ab6fa3e7a1a2a8ce894",
+        "mobilesdk_app_id": "1:88008941309:android:1a1694745ac471a48ce894",
         "android_client_info": {
           "package_name": "com.example.firebase_crashlytics_flutter_package"
         }
